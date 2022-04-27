@@ -1,3 +1,6 @@
+# Custom 진행중
+티스토리 스킨 커스텀용 제작중입니다.
+
 # hELLO
 
 <a href="https://github.com/pronist/hELLO/graphs/contributors"><img src="https://opencollective.com/tistory-skin-hello/contributors.svg"></a>

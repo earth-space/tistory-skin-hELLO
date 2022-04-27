@@ -1,7 +1,7 @@
 html[data-theme='light'] {
   --h-color: #000;
   --h-color-blur: rgba(0,0,0,0.7);
-  --h-color-blurrier: rgba(0,0,0,0.5);
+  --h-color-blurrier: #4d4d4d;
   --h-color-blurriest: rgba(0,0,0,0.1);
   --h-color-background-level-1: #fff;
   --h-color-background-level-2: #f8f8f8;

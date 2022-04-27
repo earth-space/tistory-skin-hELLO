@@ -6,7 +6,7 @@
           display none
       .link_tit
         color var(--h-color) !important
-        font-size .9rem
+        font-size 16px
         font-weight 600
         margin-bottom 14px
         display inline-block
@@ -14,7 +14,7 @@
         font-size .72rem
       .category_list
         li
-          padding-top 12px
+          padding-top 10px
           margin-top 0 !important
           position relative
           &.uk-open
@@ -24,18 +24,58 @@
           .link_item
             padding-right 20px !important
             display block
+            padding 5px 0px 5px 10px
             TextOverflowHidden()
             .fa-chevron-down
               transition-duration .2s
-              font-size .82rem
+              font-size 0.82rem
               position absolute
               right 0
               line-height 1.8em
+              color #c390a4 !important
           .sub_category_list
             li
               &::before
                 color var(--h-color-blurrier)
                 font-weight 600
                 margin-right 5px
-                font-size .72rem
-                FontAwesome('\f061')
+                margin-left 20px
+                font-size 0.72rem
+                FontAwesome('\f105')
+            .link_sub_item
+              display inline-block
+              &::hover
+                -webkit-animation shake 1s
+                animation shake 1s
+                transition-duration 1s
+          .link_item_underline
+            &::before
+              content ''
+              position absolute
+              top 42px
+              left 0px
+              width 100%
+              height 2px
+              background linear-gradient(110deg, #9c47fc, #99FF00, #FF00FF)
+              display block
+              -webkit-transform-origin right top
+              -ms-transform-origin right top
+              transform-origin right top
+              -webkit-transform scale(0, 1)
+              -ms-transform scale(0, 1)
+              transform scale(0, 1)
+              -webkit-transition transform 0.4s cubic-bezier(1, 1, 1, 1)
+              transition transform 0.4s cubic-bezier(1, 1, 1, 1)
+             &:hover
+                &::before
+                  -webkit-transform-origin left top
+                  -ms-transform-origin left top
+                  transform-origin left top
+                  -webkit-transform scale(1, 1)
+                  -ms-transform scale(1, 1)
+                  transform scale(1, 1)
+        li.uk-open
+          .link_item
+            background var(--h-color-background-level-3)
+          
+                      

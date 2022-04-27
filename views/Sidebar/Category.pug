@@ -7,4 +7,45 @@ script.
     if (H.skinOptions.foldableCategory) {
       h.foldableCategory()
     }
+    
+    /*카테고리 커스텀화*/
+    var cateList = $("#__sidebar .category .tt_category .category_list a.link_item");
+    for(var i=0; i<cateList.length; i++){
+        var iconCode = "";
+        var fontColor = "#BC8F8F";
+        switch(cateList[i].innerText.split(" ")[0]){
+            case "프로그래밍언어":
+                iconCode = "fa-laptop-code";
+                break;
+            case "웹":
+                iconCode = "fa-code";
+                break;
+            case "프레임워크":
+                iconCode = "fa-toolbox";
+                break;
+            case "데이터베이스":
+                iconCode = "fa-database";
+                break;
+            case "모바일":
+                iconCode = "fa-mobile";
+                break;
+            case "운영체제":
+                iconCode = "fa-screwdriver";
+                break;
+            case "연습":
+                iconCode = "fa-pen";
+                break;
+            case "자격증":
+                iconCode = "fa-id-card";
+                break;
+            case "취미":
+                iconCode = "fa-icons";
+                break;
+        }
+        cateList[i].classList.add("link_item_underline");
+        cateList[i].innerHTML = "<i class='fas " + iconCode + "' style='margin-right:3px;font-size:0.9rem;background: -webkit-linear-gradient(#9c47fc, #356ad2); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;color: #9c47fc;'></i>"+cateList[i].innerHTML;
+    }
+    $(".link_sub_item").hover( function (e) {
+        $(this).toggleClass('animate__animated animate__headShake', e.type === 'mouseenter');
+    });
   })
