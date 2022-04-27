@@ -1,43 +1,32 @@
-# Custom 진행중
-티스토리 스킨 커스텀용 제작중입니다.
+# 📃 커스텀용 티스토리 스킨 제작중
+hELLO 스킨을 수정하여 커스텀용 스킨을 제작중입니다.    
+진행 사항은 [개인 블로그](https://earth-ing.tistory.com/) 에서 확인가능합니다.  
+기여(테마제공)를 위한 작업이 아닌 개인학습 및 스킨 적용을 목적으로한 프로젝트이며  
+원본의 저작권은 아래를 참고해주시면 되겠습니다.
 
-# hELLO
+수정작업에 익숙해지면 기여해보고 싶습니다.
+<br/>
+<br/>
 
-<a href="https://github.com/pronist/hELLO/graphs/contributors"><img src="https://opencollective.com/tistory-skin-hello/contributors.svg"></a>
 
-## 시작하기
+## 적용
+혹시 이 테마를 개인블로그에 적용하고싶으시거나 커스텀 방식을 살펴보고 싶으시다면  
+[hELLO](https://pronist.tistory.com/5)를 참조하여 받아주시고  
+같은 방식으로 preview, deploy를 진행하실 수 있습니다.  
+단, deploy 전 몇가지 수정이 필요합니다.  
+<br/>
+### ✔ views/Sidebar/Category.pug  
+* 카테고리(게시판 이름) 앞에 [Font Awesome](https://fontawesome.com/icons) 아이콘을 적용하기위한 커스텀 코드가 있습니다.  
+* 개인의 카테고리에 맞춰 원하시는 아이콘 코드로 수정해주시면 됩니다. 아이콘은 위의 Font Awesome 사이트에서 찾으실 수 있습니다.  
+* 아이콘의 style은 46번째 줄에서 확인 가능하며 그대로 사용하시거나 수정하셔도 무방합니다.  
+* 48번째 줄에는 [animaite.css](https://github.com/animate-css/animate.css) 를 이용한 hover animation이 있습니다.  
+* 애니메이션을 수정하거나 삭제하실 수 있습니다.  
 
-[hELLO](https://pronist.tistory.com/5) 는 [티도리 프레임워크](http://www.tidory.com)로 작성된 티스토리 스킨입니다. 따라서 별도의 개발 방식이 요구됩니다. 먼저, 프로젝트를 복사합니다.
+### ✔ assets/styl/App.styl  
+* 원본에 있던 light.css, dark.css cdn 대신 이 파일에 light, dark에 해당하는 커스텀 코드가 있습니다.  
+* 폰트 추가 및 수정도 주석을 참조하여 변경하실 수 있습니다.   
 
-```bash
-git clone https://github.com/pronist/hELLO
-```
-
-프로젝트 폴더로 이동하여 `node_modules` 를 설치해줄 필요가 있습니다. 티도리 프레임워크는 **Node.js, Webpack** 을 기반으로 합니다. 따라서 **NPM(Node Package Manager)** 이 요구됩니다.
-
-```bash
-cd hELLO && npm install
-```
-
-티스토리 치환자가 적용된 모습을 보려면 **프리뷰 서버** 를 사용할 필요가 있는데, `tidory.config.example.js` 의 이름을 `tidory.config.js` 로 변경하고, 티도리 프레임워크의 [환경설정](https://tidory.com/docs/configuration/)를 참고하여 `ts_session`, `url` 를 설정해줄 필요가 있습니다. 이는 직접 티스토리 서버와 소통하여 치환자가 해석된 상태의 스킨을 먼저보기 위한 값입니다.
-
-설정이 완료되었다면 프리뷰 서버를 실행할 수 있습니다.
-
-```bash
-npm run preview
-```
-
-## 배포
-
-`tidory.config.js` 에 `ts_session`, `url` 이 설정되었다면 배포를 진행할 수 있습니다. 티도리 프레임워크의 [빌드 및 배포](https://tidory.com/docs/deployment)를 참고하십시오.
-
-```bash
-npm run production && npm run deploy
-```
-
-## 기여하기
-
-hELLO 에 기여하는 방법은 스킨의 **테마**를 제공하는 것입니다. hELLO 는 안정화 단계에 있기때문에 소스코드의 변화가 크게 발생하지 않습니다. 따라서 기여를 통해 사용자에게 보다 다양한 테마를 제공할 수 있는 길을 열어두기로 했습니다. 기여를 하려면 [CONTRIBUTING.md](https://github.com/pronist/hELLO/blob/master/CONTRIBUTING.md) 를 참고하여 할 수 있습니다.
+<br>
 
 ## 저작권
 
