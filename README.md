@@ -22,9 +22,17 @@ hELLO 스킨을 수정하여 커스텀용 스킨을 제작중입니다.
 * 48번째 줄에는 [animaite.css](https://github.com/animate-css/animate.css) 를 이용한 hover animation이 있습니다.  
 * 애니메이션을 수정하거나 삭제하실 수 있습니다.  
 
+### ✔ assets/styl/themes/light, dark.styl  
+* 원본에 있던 light.css, dark.css cdn 대신 이 경로에 light, dark에 해당하는 커스텀 코드가 있습니다.
+* 색상 팔레트 변경을 원하신다면 이곳을 참조하세요.
+  
 ### ✔ assets/styl/App.styl  
-* 원본에 있던 light.css, dark.css cdn 대신 이 파일에 light, dark에 해당하는 커스텀 코드가 있습니다.  
-* 폰트 추가 및 수정도 주석을 참조하여 변경하실 수 있습니다.   
+* 대표 폰트 추가 및 수정은 이곳의 주석을 참조하여 변경하실 수 있습니다.
+  
+### ✔ assets/styl/App/Main/Post/_Post/_Content.styl  
+* 제목1, 제목2, 제목3에 해당하는 커스텀 스타일이 선언되어있는 곳입니다. 
+* 이외에도 다른 스타일들을 선언하여 활용할 수 있습니다.
+* 현재는 light theme만 작성되어있습니다.
 
 <br>
 
