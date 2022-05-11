@@ -1,4 +1,4 @@
-$SPY_WIDTH = 180px
+$SPY_WIDTH = 270px
 $SPY_HEIGHT = 620px
 
 #__spy
@@ -11,8 +11,8 @@ $SPY_HEIGHT = 620px
   display block
   height 100%
   // (MAX_WIDTH + ARTICLE_WIDTH / 2) + MARGIN_LEFT
-  margin-left 'calc(((1100px + %s) / 2) + 50px) !important' % var(--h-article-width)
-  top 0
+  margin-left 'calc(((990px + %s) / 2)) !important' % var(--h-article-width)
+  top 50px
   .__
     position sticky
     top 140px
@@ -40,5 +40,6 @@ $SPY_HEIGHT = 620px
             transition-duration .5s
             color var(--h-color)
             font-weight 500
+
   @media screen and (max-width: 1820px)
     display none !important
