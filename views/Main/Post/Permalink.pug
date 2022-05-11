@@ -36,3 +36,9 @@ script.
 
     $(window).on('scroll', h.sticky('#__nav', '.permalink .contents_style', 'sticky')) // Set sticky
   })
+
+script.
+  /* Code Block Style Custom*/
+  $(document).ready(() => {
+    $("pre").before("<div class='my-def-codeblock'></div>")
+  })

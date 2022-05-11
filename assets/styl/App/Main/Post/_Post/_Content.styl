@@ -135,6 +135,7 @@
           border-radius 0 !important
           padding 0
           background none !important
+          margin-top 0 !important
           code
             background-color var(--h-color-background-level-2) !important
             padding 15px
@@ -204,3 +205,26 @@ html[data-theme='light']
         background #F0F5FF
         padding 20px
         border-radius 10px
+      div[class='my-def-codeblock']
+        height 25px
+        margin-top 20px
+        &::before
+          background #414041
+          width 100%
+          display inline-block
+          height 26px
+          content ""
+          margin-bottom -18x
+          border-radius 5px 5px 0px 0px
+          box-shadow 0px 1px #c4c4c4
+        &::after
+          content ""
+          border-radius 50%
+          background #ed5752
+          box-shadow -20px 0px #90d37e, -40px 0px #e6cc72
+          width 10px
+          height 10px
+          position absolute
+          right 12px
+          z-index 100
+          margin-top 9px
